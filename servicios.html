@@ -4,12 +4,19 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
-    <title>Preentrega1</title>
+    <link rel="shortcut icon" href="images/sin-fondo (1).png" type="image/x-icon">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="responsive.css">
+    <title>Broxy</title>
 </head>
     <body>
+
+        <!--  Barra de navegacion  -->
         <header>
-            <img class="imagenlogo" src="images/sin-fondo (1).png" width="100px" height="100px">
-            <nav>
+            <a href="index.html">
+                <img class="imagenlogo" src="images/sin-fondo (1).png" width="60px" height="60px">
+            </a>
+            <nav class="barranav">
                 <ul>
                     <li><a href="index.html">home</a></li>
                     <li><a href="beats.html">beats</a></li>
@@ -19,22 +26,39 @@
                 </ul>   
             </nav>
         </header>
+        <!--  Barra de navegacion  -->
+
+
 <main>
-        <h2 id="sec3">Servicios</h2>
-        <section class="sec sec3">
-            <div>
-                <img class= "imagenservicio" src="images/six-stages-of-music-production-720x405.jpg" alt="servicio 1">
-            </div>
-            <button>Contactame</button>
-        </section>
-            <h2 id="sec4">Sobre mi</h2>
-        <section class="sec sec4">
-            <p class="parrafosobremi">
-                Hola soy Matheo tambien conocido como broxy. Soy un productor musical independiente nacido en argentina, llevo 4 años haciendo musica (Instrumentales y Canciones).
-                Mi genero principal siempre fue el Lofi Hip-Hop pero con el tiempo fui explorando nuevos generos como el Boom Bap, Trap, Techno entre otros. Hoy en dia soy muy flexsible con los generos y puedo acomodarme a casi cualquier genero.
-            </p>
-            <a class= "vermas" href="sobremi.html">Ver mas</a>
-        </section>
+    <section class="servicios">
+        <h2 class="titulo">Servicios</h2>
+
+<div class="tarjetas-servicios">
+
+    <div class="tarjeta">
+        <h3>Beats Personalizadas</h3>
+        <p>Beats hechos a tu medida, adaptados a tu estilo musical.</p>
+        <img class="instrumentalfoto" src="images/instrumental.jpg" alt="instrumentales">
+    </div>
+    
+    <div class="tarjeta">
+        <h3>Grabación Profesional</h3>
+        <p>Graba tus voces con calidad de estudio, mezcla y efectos incluidos.</p>
+        <img class="vocesfoto" src="images/voces.jpg" alt="voces">
+    </div>
+
+    <div class="tarjeta">
+        <h3>Mezcla y Master</h3>
+        <p>Dale el toque final a tu canción con un sonido profesional y pulido.</p>
+        <img class="mezclafoto" src="images/mezcla.jpg" alt="mezcla y master">
+    </div>
+
+</div>
+
+    <a href="#contacto" class="btn-contacto">Contáctame</a>
+
+    </section>
+</main>
 
         <footer>
             <p>Derechos reservados por copyright</p>
@@ -50,5 +74,5 @@
         </a>
     </div>
 </footer>
-    </main>
+
     </body>

@@ -4,6 +4,15 @@
     font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
 
+html, body {
+    height: 100%;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+}
+
 /*-----------------------------------------------------------Estilo titulos principales-----------------------------------------------------------*/
 h2{
     text-align: center;
@@ -68,6 +77,7 @@ main {
     background-color: black;
     align-items: center;
     padding-top: 80px;
+    flex: 1;
 }
 
 .sec{
@@ -286,3 +296,78 @@ footer{
     text-decoration: none;
 }
 
+.servicios {
+    background-color: #1a1a1a;
+    color: white;
+    padding: 60px 30px;
+    text-align: center;
+}
+
+.titulo {
+    font-size: 2.5rem;
+    color: #fff700;
+    text-shadow: 0 0 15px #fff700;
+    margin-bottom: 40px;
+}
+
+.tarjetas-servicios {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 30px;
+    align-items: stretch;
+}
+
+.tarjeta {
+    background-color: #2a2a2a;
+    border-radius: 15px;
+    padding: 25px;
+    max-width: 300px;
+    box-shadow: 0 0 10px #000000aa;
+    transition: transform 0.3s ease;
+}
+
+.tarjeta:hover {
+    transform: scale(1.05);
+}
+
+.tarjeta h3 {
+    margin-bottom: 10px;
+    color: #fff;
+}
+
+.tarjeta p {
+    color: #ccc;
+    font-size: 0.95rem;
+}
+
+.tarjeta:last-child {
+    margin-bottom: 0;
+}
+
+.btn-contacto {
+    display: inline-block;
+    margin-top: 40px;
+    background-color: #fff700;
+    color: #000;
+    padding: 12px 25px;
+    border-radius: 30px;
+    font-weight: bold;
+    text-decoration: none;
+    box-shadow: 0 0 10px #fff700;
+    transition: background-color 0.3s ease;
+}
+
+.btn-contacto:hover {
+    background-color: #e6e600;
+}
+
+.vocesfoto, .mezclafoto, .instrumentalfoto{
+    width: 100%;
+    max-width: 400px;
+    height: 400px;
+    object-fit: cover;
+    border-radius: 10px;
+    margin-top: 15px;
+    opacity: 40%;
+}
